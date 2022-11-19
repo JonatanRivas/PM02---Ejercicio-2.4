@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PhotoApp.MainPage">
+
+    <StackLayout>
+        <Image Source="https://www.uth.hn/wp-content/uploads/2019/12/logo-1.png"
+         HeightRequest="200"
+         WidthRequest="600"
+         HorizontalOptions="CenterAndExpand"
+         Aspect="Fill"/>
+        <Frame BackgroundColor="Green" Padding="36" CornerRadius="0" AutomationProperties.IsInAccessibleTree="True" BorderColor="#38BE0F">
+            <Label Text="Video App" HorizontalTextAlignment="Center" TextColor="White" FontSize="60"/>
+        </Frame>
+        
+        <Button x:Name="btnAddVideo" Text="Grabar Video" Clicked="btnAddVideo_Clicked"></Button>
+        <Button x:Name="btnViewVideos" Text="Lista de Videos" Clicked="btnViewVideos_Clicked"></Button>
+        <Button x:Name="btnPlay" Text="Salir" Clicked="btnPlay_Clicked"></Button>
+    </StackLayout>
+
+</ContentPage>
